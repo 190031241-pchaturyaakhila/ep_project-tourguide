@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>Eroam</h1>
+  <p>Eroam is a knowledge platform for the hotel, hospitality & travel industry.
+
+Professionals use our marketing, revenue management, technology and software insights, strategies and actionable tips to get inspired, optimise revenue, innovate processes and improve customer experience.
+
+The strength of Revfine.com is that it consists of high quality and unique knowledge-base content. Every article provides explanatory and actionable solutions.</p>
+  <p>Our mission is to: Bring together people and places of spirit and character for meaningful experiences. Have a positive social, cultural and environmental impact.s</p>
+</div>
+
+<h2 style="text-align:center"></h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="104.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2></h2>
+        <p class="title">We seek out independent hotels</p>
+        <p>We celebrate difference, not standardisation, championing small businesses and big personalities to challenge the blandness of modern travel.</p>
+        <p></p>
+        <p><button class="button">Know more</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="105.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Four reasons to love our collection</h2>
+        <p class="title">We inspect & select</p>
+        <p>Our collection is a shortcut past the bland and impersonal to places crafted by people with a passion for hospitality. Every single B&B, hotel, inn and self-catering place on Sawday’s is visited and revisited by one of our experienced team to make sure it has the creativity and warmth to give you a memorable stay.</p>
+        <p>We reject over 50% of places that apply and know you’ll love the ones we’ve accepted. Our descriptions are honest, trustworthy and based on our personal experience of each unique place to stay.</p>
+        <p><button class="button">know more</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="106.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Amazing places</h2>
+        <p class="title">in INDIA</p>
+        <p>We look for warm and generous hosts, a connection to the local area, awareness of environmental responsibility, and the essentials (beds, bathrooms and kitchens) done with style and care – you can trust our places will make you feel welcome and comfortable</p>
+        <p>You’ll also find something extra – surprising or unusual touches of creativity, craft or personality that will be the highlights of your stay and the things you always remember.</p>
+        <p><button class="button">know more</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

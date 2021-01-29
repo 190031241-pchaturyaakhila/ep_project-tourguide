@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<!-- Navigation -->
+
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">
+  <div style="text-align: right"><img src="109.jpg" width="100" /></div>
+  </a>
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="slogin.html" class="w3-button w3-bar-item">Login</a>
+  <a href="about.html" class="w3-button w3-bar-item">About us</a>
+  <a href="formpage.html" class="w3-button w3-bar-item">Contact</a>
+  <a href="ptourist.html" class="w3-button w3-bar-item">View packages</a>
+  <a href="c.html" class="w3-button w3-bar-item">Queries</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="101.jpg"
+  style="width:100%" style="height:20%">
+  <img class="mySlides" src="102.jpg"
+  style="width:100%" style="height:20%">
+  <img class="mySlides" src="103.jpg"
+  style="width:100%" style="height:20%">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">E ROAM</h2>
+  <p class="w3-opacity"><i>Love travelling</i></p>
+  <p class="w3-justify">We have created a fictional band website. eRoam offers a \ marketplace featuring of global travel products in many destinations including hotels, guest houses and villas, tours, activities and attractions, and thousands of transportation providers including airlines, car hire, rail, cruises, and more. 
+
+eRoam uses a mix of AI, machine learning, consumer data and travel expertise to build smart itineraries in a matter of seconds, meaning users can turn around customer enquiries in minutes rather than hours/days.
+
+!</p>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>Tours</p>
+    <img src="tours.jpg" alt="Random Name" style="width:100%">
+    
+  </article>
+  <article class="w3-third">
+    <p>Transportation</p>
+    <img src="trans.jpeg" alt="Random Name" style="width:100%">
+   
+  </article>
+  <article class="w3-third">
+    <p>Hotels and accomodations</p>
+    <img src="hotel.jpg" alt="Random Name" style="width:100%">
+   
+  </article>
+</section>
+ 
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
